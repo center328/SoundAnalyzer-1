@@ -6,14 +6,210 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DC9B6594165A8E28004DF8BF /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9B6593165A8E28004DF8BF /* OpenAL.framework */; };
+		DC9B65AA165A94A2004DF8BF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9B65A8165A949D004DF8BF /* AudioToolbox.framework */; };
+		DC9B65AF165AA211004DF8BF /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9B65AB165A98D2004DF8BF /* CoreFoundation.framework */; };
+		DC9B65B8165AA4A3004DF8BF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC9B65B7165AA4A3004DF8BF /* main.cpp */; };
+		DC9B65BA165AA4A3004DF8BF /* SoundAnalyzerTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC9B65B9165AA4A3004DF8BF /* SoundAnalyzerTest.1 */; };
+		DC9B65BE165AA4C5004DF8BF /* libSoundAnalyzer.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE63FBB16599B6100F82243 /* libSoundAnalyzer.dylib */; };
+		DC9B65CD165AEC46004DF8BF /* AudioAnalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC9B65BF165AEC44004DF8BF /* AudioAnalyzer.cpp */; };
+		DC9B65CE165AEC46004DF8BF /* AudioAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9B65C0165AEC45004DF8BF /* AudioAnalyzer.h */; };
+		DC9B65CF165AEC46004DF8BF /* AudioFeatures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC9B65C1165AEC45004DF8BF /* AudioFeatures.cpp */; };
+		DC9B65D0165AEC46004DF8BF /* AudioFeatures.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9B65C2165AEC45004DF8BF /* AudioFeatures.h */; };
+		DC9B65D1165AEC46004DF8BF /* AudioInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9B65C3165AEC45004DF8BF /* AudioInfo.h */; };
+		DC9B65D2165AEC46004DF8BF /* AudioLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9B65C4165AEC45004DF8BF /* AudioLoader.h */; };
+		DC9B65D3165AEC46004DF8BF /* AudioSections.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC9B65C5165AEC45004DF8BF /* AudioSections.cpp */; };
+		DC9B65D4165AEC46004DF8BF /* AudioSections.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9B65C6165AEC45004DF8BF /* AudioSections.h */; };
+		DC9B65D5165AEC46004DF8BF /* AudioTrack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC9B65C7165AEC45004DF8BF /* AudioTrack.cpp */; };
+		DC9B65D6165AEC46004DF8BF /* AudioTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9B65C8165AEC45004DF8BF /* AudioTrack.h */; };
+		DC9B65D7165AEC46004DF8BF /* FFTWOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC9B65C9165AEC45004DF8BF /* FFTWOutput.cpp */; };
+		DC9B65D8165AEC46004DF8BF /* FFTWOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9B65CA165AEC46004DF8BF /* FFTWOutput.h */; };
+		DC9B65D9165AEC46004DF8BF /* OSXAudioLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC9B65CB165AEC46004DF8BF /* OSXAudioLoader.cpp */; };
+		DC9B65DA165AEC46004DF8BF /* OSXAudioLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9B65CC165AEC46004DF8BF /* OSXAudioLoader.h */; };
+		DCE63FC516599CAE00F82243 /* libfftw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE63FC416599CAE00F82243 /* libfftw3.a */; };
+		DCED45C6165BFF9C006B5729 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9B6593165A8E28004DF8BF /* OpenAL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC9B65B2165AA4A3004DF8BF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				DC9B65BA165AA4A3004DF8BF /* SoundAnalyzerTest.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DC9B6593165A8E28004DF8BF /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = ../../../../System/Library/Frameworks/OpenAL.framework; sourceTree = "<group>"; };
+		DC9B65A8165A949D004DF8BF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		DC9B65AB165A98D2004DF8BF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		DC9B65B4165AA4A3004DF8BF /* SoundAnalyzerTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SoundAnalyzerTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9B65B7165AA4A3004DF8BF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DC9B65B9165AA4A3004DF8BF /* SoundAnalyzerTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SoundAnalyzerTest.1; sourceTree = "<group>"; };
+		DC9B65BF165AEC44004DF8BF /* AudioAnalyzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioAnalyzer.cpp; path = SoundAnalyzer/AudioAnalyzer.cpp; sourceTree = SOURCE_ROOT; };
+		DC9B65C0165AEC45004DF8BF /* AudioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioAnalyzer.h; path = SoundAnalyzer/AudioAnalyzer.h; sourceTree = SOURCE_ROOT; };
+		DC9B65C1165AEC45004DF8BF /* AudioFeatures.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioFeatures.cpp; path = SoundAnalyzer/AudioFeatures.cpp; sourceTree = SOURCE_ROOT; };
+		DC9B65C2165AEC45004DF8BF /* AudioFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioFeatures.h; path = SoundAnalyzer/AudioFeatures.h; sourceTree = SOURCE_ROOT; };
+		DC9B65C3165AEC45004DF8BF /* AudioInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioInfo.h; path = SoundAnalyzer/AudioInfo.h; sourceTree = SOURCE_ROOT; };
+		DC9B65C4165AEC45004DF8BF /* AudioLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioLoader.h; path = SoundAnalyzer/AudioLoader.h; sourceTree = SOURCE_ROOT; };
+		DC9B65C5165AEC45004DF8BF /* AudioSections.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioSections.cpp; path = SoundAnalyzer/AudioSections.cpp; sourceTree = SOURCE_ROOT; };
+		DC9B65C6165AEC45004DF8BF /* AudioSections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioSections.h; path = SoundAnalyzer/AudioSections.h; sourceTree = SOURCE_ROOT; };
+		DC9B65C7165AEC45004DF8BF /* AudioTrack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioTrack.cpp; path = SoundAnalyzer/AudioTrack.cpp; sourceTree = SOURCE_ROOT; };
+		DC9B65C8165AEC45004DF8BF /* AudioTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioTrack.h; path = SoundAnalyzer/AudioTrack.h; sourceTree = SOURCE_ROOT; };
+		DC9B65C9165AEC45004DF8BF /* FFTWOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FFTWOutput.cpp; path = SoundAnalyzer/FFTWOutput.cpp; sourceTree = SOURCE_ROOT; };
+		DC9B65CA165AEC46004DF8BF /* FFTWOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFTWOutput.h; path = SoundAnalyzer/FFTWOutput.h; sourceTree = SOURCE_ROOT; };
+		DC9B65CB165AEC46004DF8BF /* OSXAudioLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OSXAudioLoader.cpp; path = SoundAnalyzer/OSXAudioLoader.cpp; sourceTree = SOURCE_ROOT; };
+		DC9B65CC165AEC46004DF8BF /* OSXAudioLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSXAudioLoader.h; path = SoundAnalyzer/OSXAudioLoader.h; sourceTree = SOURCE_ROOT; };
+		DCE63FBB16599B6100F82243 /* libSoundAnalyzer.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libSoundAnalyzer.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE63FC416599CAE00F82243 /* libfftw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3.a; path = lib/libfftw3.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC9B65B1165AA4A3004DF8BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9B65BE165AA4C5004DF8BF /* libSoundAnalyzer.dylib in Frameworks */,
+				DCED45C6165BFF9C006B5729 /* OpenAL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE63FB816599B6100F82243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9B65AF165AA211004DF8BF /* CoreFoundation.framework in Frameworks */,
+				DCE63FC516599CAE00F82243 /* libfftw3.a in Frameworks */,
+				DC9B65AA165A94A2004DF8BF /* AudioToolbox.framework in Frameworks */,
+				DC9B6594165A8E28004DF8BF /* OpenAL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
+		DC9B658D165A6C03004DF8BF /* library */ = {
+			isa = PBXGroup;
+			children = (
+				DC9B65AB165A98D2004DF8BF /* CoreFoundation.framework */,
+				DC9B65A8165A949D004DF8BF /* AudioToolbox.framework */,
+				DC9B6593165A8E28004DF8BF /* OpenAL.framework */,
+				DCE63FC416599CAE00F82243 /* libfftw3.a */,
+			);
+			name = library;
+			sourceTree = "<group>";
+		};
+		DC9B65B6165AA4A3004DF8BF /* SoundAnalyzerTest */ = {
+			isa = PBXGroup;
+			children = (
+				DC9B65B7165AA4A3004DF8BF /* main.cpp */,
+				DC9B65B9165AA4A3004DF8BF /* SoundAnalyzerTest.1 */,
+			);
+			path = SoundAnalyzerTest;
+			sourceTree = "<group>";
+		};
 		DCE63FA516599A7A00F82243 = {
 			isa = PBXGroup;
 			children = (
+				DC9B658D165A6C03004DF8BF /* library */,
+				DCE63FAE16599B4600F82243 /* SoundAnalyzer */,
+				DC9B65B6165AA4A3004DF8BF /* SoundAnalyzerTest */,
+				DCE63FBC16599B6100F82243 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
+		DCE63FAE16599B4600F82243 /* SoundAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				DC9B65BF165AEC44004DF8BF /* AudioAnalyzer.cpp */,
+				DC9B65C0165AEC45004DF8BF /* AudioAnalyzer.h */,
+				DC9B65C1165AEC45004DF8BF /* AudioFeatures.cpp */,
+				DC9B65C2165AEC45004DF8BF /* AudioFeatures.h */,
+				DC9B65C3165AEC45004DF8BF /* AudioInfo.h */,
+				DC9B65C4165AEC45004DF8BF /* AudioLoader.h */,
+				DC9B65C5165AEC45004DF8BF /* AudioSections.cpp */,
+				DC9B65C6165AEC45004DF8BF /* AudioSections.h */,
+				DC9B65C7165AEC45004DF8BF /* AudioTrack.cpp */,
+				DC9B65C8165AEC45004DF8BF /* AudioTrack.h */,
+				DC9B65C9165AEC45004DF8BF /* FFTWOutput.cpp */,
+				DC9B65CA165AEC46004DF8BF /* FFTWOutput.h */,
+				DC9B65CB165AEC46004DF8BF /* OSXAudioLoader.cpp */,
+				DC9B65CC165AEC46004DF8BF /* OSXAudioLoader.h */,
+			);
+			name = SoundAnalyzer;
+			path = source;
+			sourceTree = "<group>";
+		};
+		DCE63FBC16599B6100F82243 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCE63FBB16599B6100F82243 /* libSoundAnalyzer.dylib */,
+				DC9B65B4165AA4A3004DF8BF /* SoundAnalyzerTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DCE63FB916599B6100F82243 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9B65CE165AEC46004DF8BF /* AudioAnalyzer.h in Headers */,
+				DC9B65D0165AEC46004DF8BF /* AudioFeatures.h in Headers */,
+				DC9B65D1165AEC46004DF8BF /* AudioInfo.h in Headers */,
+				DC9B65D2165AEC46004DF8BF /* AudioLoader.h in Headers */,
+				DC9B65D4165AEC46004DF8BF /* AudioSections.h in Headers */,
+				DC9B65D6165AEC46004DF8BF /* AudioTrack.h in Headers */,
+				DC9B65D8165AEC46004DF8BF /* FFTWOutput.h in Headers */,
+				DC9B65DA165AEC46004DF8BF /* OSXAudioLoader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DC9B65B3165AA4A3004DF8BF /* SoundAnalyzerTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC9B65BB165AA4A3004DF8BF /* Build configuration list for PBXNativeTarget "SoundAnalyzerTest" */;
+			buildPhases = (
+				DC9B65B0165AA4A3004DF8BF /* Sources */,
+				DC9B65B1165AA4A3004DF8BF /* Frameworks */,
+				DC9B65B2165AA4A3004DF8BF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundAnalyzerTest;
+			productName = SoundAnalyzerTest;
+			productReference = DC9B65B4165AA4A3004DF8BF /* SoundAnalyzerTest */;
+			productType = "com.apple.product-type.tool";
+		};
+		DCE63FBA16599B6100F82243 /* SoundAnalyzer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCE63FBD16599B6100F82243 /* Build configuration list for PBXNativeTarget "SoundAnalyzer" */;
+			buildPhases = (
+				DCE63FB716599B6100F82243 /* Sources */,
+				DCE63FB816599B6100F82243 /* Frameworks */,
+				DCE63FB916599B6100F82243 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundAnalyzer;
+			productName = SoundAnalyzer;
+			productReference = DCE63FBB16599B6100F82243 /* libSoundAnalyzer.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		DCE63FA716599A7A00F82243 /* Project object */ = {
@@ -29,14 +225,100 @@
 				en,
 			);
 			mainGroup = DCE63FA516599A7A00F82243;
+			productRefGroup = DCE63FBC16599B6100F82243 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				DCE63FBA16599B6100F82243 /* SoundAnalyzer */,
+				DC9B65B3165AA4A3004DF8BF /* SoundAnalyzerTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXSourcesBuildPhase section */
+		DC9B65B0165AA4A3004DF8BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9B65B8165AA4A3004DF8BF /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE63FB716599B6100F82243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9B65CD165AEC46004DF8BF /* AudioAnalyzer.cpp in Sources */,
+				DC9B65CF165AEC46004DF8BF /* AudioFeatures.cpp in Sources */,
+				DC9B65D3165AEC46004DF8BF /* AudioSections.cpp in Sources */,
+				DC9B65D5165AEC46004DF8BF /* AudioTrack.cpp in Sources */,
+				DC9B65D7165AEC46004DF8BF /* FFTWOutput.cpp in Sources */,
+				DC9B65D9165AEC46004DF8BF /* OSXAudioLoader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
 /* Begin XCBuildConfiguration section */
+		DC9B65BC165AA4A3004DF8BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = include;
+				LIBRARY_SEARCH_PATHS = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = lib;
+			};
+			name = Debug;
+		};
+		DC9B65BD165AA4A3004DF8BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = include;
+				LIBRARY_SEARCH_PATHS = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = lib;
+			};
+			name = Release;
+		};
 		DCE63FAC16599A7A00F82243 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -49,14 +331,111 @@
 			};
 			name = Release;
 		};
+		DCE63FBE16599B6100F82243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CXX0X_EXTENSIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = include;
+				LIBRARY_SEARCH_PATHS = (
+					lib,
+					"\"$(SRCROOT)/lib\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = include;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		DCE63FBF16599B6100F82243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CXX0X_EXTENSIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = include;
+				LIBRARY_SEARCH_PATHS = (
+					lib,
+					"\"$(SRCROOT)/lib\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = include;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC9B65BB165AA4A3004DF8BF /* Build configuration list for PBXNativeTarget "SoundAnalyzerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9B65BC165AA4A3004DF8BF /* Debug */,
+				DC9B65BD165AA4A3004DF8BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DCE63FAA16599A7A00F82243 /* Build configuration list for PBXProject "SoundAnalyzer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCE63FAC16599A7A00F82243 /* Debug */,
 				DCE63FAD16599A7A00F82243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCE63FBD16599B6100F82243 /* Build configuration list for PBXNativeTarget "SoundAnalyzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE63FBE16599B6100F82243 /* Debug */,
+				DCE63FBF16599B6100F82243 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
