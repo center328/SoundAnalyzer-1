@@ -5,10 +5,10 @@
 OSXAudioLoader::OSXAudioLoader()
 {
     device = alcOpenDevice(NULL);
-    if (device != nullptr)
+    if (device != NULL)
     {
         context = alcCreateContext(device, 0);
-        if (context != nullptr)
+        if (context != NULL)
         {
             alcMakeContextCurrent(context);
             
@@ -24,8 +24,8 @@ OSXAudioLoader::~OSXAudioLoader()
     alcDestroyContext(context);
     alcCloseDevice(device);
     
-    context = nullptr;
-    device = nullptr;
+    context = NULL;
+    device = NULL;
     
     initialized = false;
 }
@@ -92,7 +92,7 @@ bool OSXAudioLoader::loadFromWAV(const std::string &path, AudioInfo& info)
         return false;
     }
     
-    if (info.samples != nullptr)
+    if (info.samples != NULL)
         info.samples->clear();
     else
         info.samples = new std::vector<int16_t>();

@@ -10,7 +10,7 @@ AudioTrack::~AudioTrack()
 {
     info.sampleRate = 0;
     info.channelsCount = 0;
-    info.samples = nullptr;
+    info.samples = NULL;
     initialized = false;
 }
 

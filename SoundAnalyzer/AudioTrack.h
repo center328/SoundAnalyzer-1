@@ -7,7 +7,7 @@
 class AudioTrack
 {
 public:
-    AudioTrack() : initialized(false), info({0, new std::vector<int16_t>, 0}), loader(nullptr) {}
+    AudioTrack() : initialized(false), info(AudioInfo()), loader(NULL) {}
     ~AudioTrack();
     
     bool initFromFile(const std::string& path);
@@ -16,7 +16,7 @@ public:
     
     size_t getSamplesCount() const { return info.samples->size() / info.channelsCount; }
     unsigned int getChannelsCount() const { return info.channelsCount; }
-    const int16_t* getSamples() const { return info.samples->empty() ? nullptr : &info.samples->at(0); }
+    const int16_t* getSamples() const { return info.samples->empty() ? NULL : &info.samples->at(0); }
     unsigned int getSampleRate() const { return info.sampleRate; }
     
 private:

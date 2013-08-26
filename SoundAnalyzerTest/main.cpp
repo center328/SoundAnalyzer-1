@@ -30,7 +30,8 @@ int main (int argc, const char * argv[])
     */
     
     AudioTrack track;
-    track.initFromFile(argv[1]);
+    if (!track.initFromFile(argv[1]))
+        return 1;
     
     /*
     unsigned int alSource;
